@@ -1,0 +1,1 @@
+cmd_/home/ahmed/Dropbox/Multicast-Sproj/Read-Write/ack.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/ahmed/Dropbox/Multicast-Sproj/Read-Write/ack.ko /home/ahmed/Dropbox/Multicast-Sproj/Read-Write/ack.o /home/ahmed/Dropbox/Multicast-Sproj/Read-Write/ack.mod.o

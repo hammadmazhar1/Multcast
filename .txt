@@ -1,0 +1,7 @@
+------------------------------------------------------------
+Client connecting to 224.0.67.67, UDP port 5001
+Sending 1470 byte datagrams
+Setting multicast TTL to 1
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  3] local 192.168.1.1 port 46788 connected with 224.0.67.67 port 5001

@@ -1,0 +1,1 @@
+cmd_/home/nsg/Dropbox/Sproj/Client_Module/client_module.ko := ld -r -m elf_x86_64 -T /usr/src/linux-3.13.2/scripts/module-common.lds --build-id  -o /home/nsg/Dropbox/Sproj/Client_Module/client_module.ko /home/nsg/Dropbox/Sproj/Client_Module/client_module.o /home/nsg/Dropbox/Sproj/Client_Module/client_module.mod.o

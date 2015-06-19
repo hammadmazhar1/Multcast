@@ -1,0 +1,1 @@
+cmd_/home/ahmed/Dropbox/Multicast-Sproj/Hook/ack.ko := ld -r -m elf_x86_64 -T /usr/src/linux-3.12.37/scripts/module-common.lds --build-id  -o /home/ahmed/Dropbox/Multicast-Sproj/Hook/ack.ko /home/ahmed/Dropbox/Multicast-Sproj/Hook/ack.o /home/ahmed/Dropbox/Multicast-Sproj/Hook/ack.mod.o

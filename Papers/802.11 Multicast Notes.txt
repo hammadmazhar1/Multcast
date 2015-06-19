@@ -1,0 +1,1 @@
+In 802.11 only the AP is allowed to transmit Group addressed packets.
