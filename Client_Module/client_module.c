@@ -46,7 +46,7 @@ int l_received = 0;
 int leader = 0;
 int counter = 0;
 
-unsigned int hook_func(unsigned int hooknum, struct sk_buff *skb, const struct net_device *in, const struct net_device *out, int (*okfn)(struct sk_buff *));
+unsigned int hook_func(const struct nf_hook_ops *ops, struct sk_buff *skb, const struct net_device *in, const struct net_device *out, int (*okfn)(struct sk_buff *));
 
 void send_takeover(int t)
 {
@@ -142,7 +142,7 @@ static void __exit client_exit( void )
     nf_unregister_hook(&nfho);
 }
 
-unsigned int hook_func(unsigned int hooknum, struct sk_buff *skb, const struct net_device *in, const struct net_device *out, int (*okfn)(struct sk_buff *))
+unsigned int hook_func(const struct nf_hook_ops *ops, struct sk_buff *skb, const struct net_device *in, const struct net_device *out, int (*okfn)(struct sk_buff *))
 {
     int i;
     struct sk_buff *sock_buff = skb;
