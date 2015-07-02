@@ -139,7 +139,7 @@ unsigned int hook_func(const struct nf_hook_ops *ops, struct sk_buff *skb, const
 		if (udph->dest == 1532 && leader != MY_ID && leader != 0)
 		{
 			printk("Overhead packet ack\n");
-			/*
+			
 			data = (unsigned char *) skb_header_pointer (skb, IP_HDR_LEN+UDP_HDR_LEN, 0, NULL);
 			memcpy(ctable, data, 48);
 
@@ -158,7 +158,7 @@ unsigned int hook_func(const struct nf_hook_ops *ops, struct sk_buff *skb, const
                     send_takeover(0);
             }
             return NF_ACCEPT;
-            */
+            
 		}
 
         ttl = (unsigned int)ip_header->ttl;    //grab network header using accessor
